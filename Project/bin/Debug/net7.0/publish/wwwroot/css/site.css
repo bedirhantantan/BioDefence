@@ -1,0 +1,563 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2c3e50;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+  position: relative;
+  z-index: 100000;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #e74c3c;
+  transition: width 0.3s;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #61e8ea;
+}
+
+/* Navbar Hover Animasyonu */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(4, 144, 162, 0.3);
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 10000;
+  transition: transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+/* Hizmetler (services) */
+#servicess {
+  background-image:linear-gradient(rgba(230,255,230,0.05),#61e8ea), url("https://i.cnnturk.com/i/cnnturk/75/1200x675/621c86af79da3e21a83f6529.jpg") !important; 
+  
+  background-size: cover; /* Resmi ekrana tam sığdır */
+  background-position: center; /* Resmi ortala */
+  background-repeat: no-repeat; /* Tekrar etmesini engelle */
+  margin-top: 150px !important;
+}
+
+@media (max-width:992px)  {
+  #servicess {
+    margin-top: 300px !important;
+  }
+}
+
+@media (max-width:767px) and (min-width:352px)  {
+  #servicess {
+    margin-top: 500px !important;
+  }
+}
+
+@media (max-width:352px) and (min-width:100px) {
+  #servicess {
+    margin-top: 580px !important;
+  }
+}
+
+
+
+
+#servicess {
+  padding-top: 5rem; /* İhtiyaca göre üst boşluk ayarlayabilirsiniz */
+}
+
+.servicess-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.service-icon {
+  font-size: 3rem; /* İkon boyutunu ayarlayabilirsiniz */
+  margin-bottom: 1rem; /* İkon ile yazı arasına boşluk ekler */
+  transition: transform 0.3s ease; /* Transform geçişi ekler */
+}
+
+.servicess-title {
+  color: #fff;
+  font-size: 1.2rem; /* Yazı boyutunu ayarlayabilirsiniz */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Renk geçişi ekler */
+  z-index: 2;
+    opacity: 1;
+}
+
+.servicess-card:hover .service-icon {
+  transform: scale(1.1); /* Hover efekti: İkon boyutunu biraz büyütür */
+  color: #2c3e50; /* Hover efekti: İkon rengini değiştirir */
+  cursor: pointer;
+}
+
+.servicess-card:hover .servicess-title {
+  color: #2c3e50; /* Hover efekti: Yazı rengini değiştirir */
+}
+
+
+
+/* Services Finish */
+
+#about .container {
+  width: 100%; /* Adjust this as needed */
+  height: 400px; /* Adjust this as needed */
+}
+
+@media (max-width: 800px) {
+  /* Sayfa linkleri ve adres gizlenecek */
+  #about .container {
+    margin-bottom: 150px;
+  }
+  }
+
+/* Set the image to cover the container while maintaining its aspect ratio */
+#about img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+img {
+  width: 150px; /* İstenilen genişlik değeri */
+  height: auto;
+}
+
+
+/* Navbar stilleri */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Navbar'ın üstte olmasını sağlamak için z-index değeri yüksek belirlendi */
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-brand:hover .img {
+  /* Hover etkisi için istediğiniz stil tanımlamalarını ekleyin */
+  /* Örneğin, resmi büyütebilir veya saydamlığını değiştirebilirsiniz */
+  transform: scale(1.1);
+  /* Daha yumuşak bir hover etkisi için geçiş ekleyebilirsiniz */
+  transition: transform 0.3s ease-in-out;
+}
+/* Slider */
+.slidebar {
+  width: 100%;
+  height: calc(100vh - 100px); /* Ekran yüksekliği kadar slider'ı boyutlandır */
+  margin-top: 56px; /* Navbar yüksekliği kadar slider'ı aşağı kaydır */
+  overflow: hidden;
+}
+
+#slider1 {
+  height: 100%;
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.carousel-item {
+  height: 100vh; /* Her slidebar öğesi ekran yüksekliğine ayarlanacak */
+  width: 100vh;
+}
+
+
+.carousel img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover; /* Görseli slidebar'a tamamen sığdırmak için */
+  
+}
+
+
+/* Slideshow finish */
+
+.my-icon {
+  color: rgba(2, 53, 59, 0.3); 
+  font-size: large;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#info {
+  font-size: large;
+}
+
+#info a {
+  font-size: large;
+  color: #2c3e50 !important;
+  text-decoration: none;
+}
+
+
+
+.service-card {
+  background-color: #1D5D9B;
+  padding: 20px;
+  border-radius: 50%; /* Yuvarlak yapmak için 50% border-radius kullanıyoruz */
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekleyelim */
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover{ 
+  transform: scale(1.2);
+  transition: 0.7s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gölgelendirmeyi artıralım */
+  background-color: #61e8ea;
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Stil değişiklikleri 1200 pikselin altında uygulanacak */
+@media (max-width: 1200px) {
+  /* Sayfa linkleri ve adres gizlenecek */
+  #links, #info {
+      display: none;
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+  .brand {
+    margin-left: 25px;
+  }
+  /* Toggle bar ikonunun rengi değiştirilebilir */
+  .navbar-toggler-icon {
+      background-color: #61e8ea; /* Örnek renk */
+      margin: 0 auto;
+  }
+
+  /* Toggle bar'a tıklanınca menü görünecek */
+  .navbar-collapse {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff; /* Arka plan rengi */
+      border: 1px solid #ddd;
+      padding: 10px;
+      
+  }
+  .navbar-collapse ul li a {
+    text-align: center;
+  }
+
+  .navbar-toggler:checked + .navbar-collapse {
+      display: block;
+  }
+
+  /* Navbar linkleri düzenlemeleri */
+  .navbar-collapse .navbar-nav .nav-item {
+      margin: 0;
+      text-align: left;
+  }
+
+  .navbar-collapse .navbar-nav .nav-link {
+      padding: 10px 15px;
+  }
+}
+
+/* Eğer mevcut CSS kodunuz içinde bu elemanların stilleri zaten varsa, aşağıdaki kodları eklemeyin. */
+
+#info .navbar-address .row {
+  justify-content: flex-end; /* Satır içeriğini sağa hizala */
+  margin-right: 20px;
+}
+
+#info .navbar-address .row .col-12 {
+  text-align: right; /* Metni sağa hizala */
+}
+
+.service-icon {
+  font-size: 3rem; /* Icon boyutunu ayarlayabilirsiniz */
+}
+
+.hizmet_baslik {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.hasere {
+  color: #1D5D9B;
+}
+
+#baslik {
+  color: #2c3e50;
+}
+
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.faq {
+  width: 48%;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.faq:hover {
+  background-color: #1D5D9B;
+  color: #fff;
+  transition: transform 0.9s ease;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq.active .faq-answer {
+  max-height: 500px;
+  transition: max-height 0.8s ease;
+}
+
+footer {
+  background-color: #1D5D9B;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+.iletisim a {
+  color: #2c3e50;
+}
+
+.iletisim-item {
+  position: relative;
+}
+
+.iletisim-item:hover .icon {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#serit {
+  height: 200px; /* Sayfanın yüksekliği kadar genişlik */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D5D9B;
+}
+
+.hiza {
+  text-align: center;
+}
+
+#serit h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#serit .ikon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.hizmetler {
+  padding: 50px 0;
+}
+.hizmet {
+  margin-bottom: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hizmet .card {
+  flex-grow: 1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.hizmet:hover .card {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.7s, box-shadow 0.5s;
+}
+
+.hizmet .card-img-top {
+  width: 100%;
+  height: 300px; /* Görselin yüksekliği */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.responsive-map {
+  width: 100%;     /* Genişliği tam ekran yap */
+  height: 400px;   /* Başlangıçta 400px yüksekliği kullan */
+  border: none;    /* Çerçeveyi kaldır */
+  display: block;  /* İframe'i blok olarak göster */
+}
+
+/* Mobil cihazlarda (Örneğin 768px altındaki ekran genişlikleri için) */
+@media screen and (max-width: 768px) {
+  .responsive-map {
+    height: 300px;   /* Mobilde yüksekliği 300px yap (isteğe bağlı ayarlanabilir) */
+  }
+}
+
+.hakkimizda-uzun img {
+  width:100%;
+}
+
+
+.whatsapp-float {
+  position: fixed;
+  width: 70px; /* Genişliği arttırıldı */
+  height: 70px; /* Yüksekliği arttırıldı */
+  bottom: 40px;
+  right: 40px;
+  background-color: #1D5D9B;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px; /* Yatayda ikonun ortalanması için değer arttırıldı */
+  box-shadow: 2px 2px 3px #61e8ea;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #FFF;
+}
+
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+}
+
+@media (max-width:700px) {
+  .whatsapp-float {
+    position: fixed;
+    width: 40px; /* Genişliği arttırıldı */
+    height: 40px; /* Yüksekliği arttırıldı */
+    bottom: 10px;
+    right: 10px;
+    background-color: #1D5D9B;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px; /* Yatayda ikonun ortalanması için değer arttırıldı */
+    box-shadow: 2px 2px 3px #61e8ea;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #FFF;
+  }
+}
