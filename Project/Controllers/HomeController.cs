@@ -27,5 +27,9 @@ public class HomeController : Controller
     public IActionResult Hakkimizda() {
         return View();
     }
+
+    public IActionResult Hasereler() {
+        return View();
+    }
    
 }

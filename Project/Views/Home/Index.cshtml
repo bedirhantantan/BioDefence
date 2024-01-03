@@ -8,14 +8,29 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="~/images/anasite.png" class="d-block w-100" alt="">                    
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="~/images/2lii.png" class="d-block w-100" alt="">
                     
+                      <picture>
+                          <source media="(max-width: 450px)"
+                                  srcset="~/images/anasite.png">           
+                          <img src="~/images/anasite.png" alt="Varsayılan Görsel">
+                      </picture>               
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="3000">
+                    
+                    <picture>
+                          <source media="(max-width: 450px)"
+                                  srcset="~/images/2lii.png">                               
+                          <img src="~/images/2lii.png" alt="Varsayılan Görsel">
+                    </picture>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="~/images/anaekran3.png" class="d-block w-100" alt="">                    
+                       
+                    <picture>
+                          <source media="(max-width: 450px)"
+                                  srcset="~/images/anaekran3.png">              
+                          <img src="~/images/anaekran3.png" alt="Varsayılan Görsel">
+                    </picture>             
                 </div>
                 
             </div>
@@ -111,6 +126,32 @@
     </div>
 </section>
 
+<div class="slider-ref container col-12">
+  <h1 class="slider-title">Referanslarımız</h1>
+    <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+            <div class="logo"><img src="~/images/Mado_logo.jpg" alt="Mado_logo"></div>
+            <div class="logo"><img src="~/images/big-mammas.png" alt="big-mammas"></div>
+            <div class="logo"><img src="~/images/cenberlitas.jpeg" alt="cenberlitas"></div>
+            <div class="logo"><img src="~/images/antalya-recelcisi.png" alt="antalya-recelcisi"></div>
+            <div class="logo"><img src="~/images/hld-hatay-lavas-doner.jpg" alt="hld-hatay-lavas-doner"></div>
+            <div class="logo"><img src="~/images/enbaba.png" alt="enbaba"></div>
+            <div class="logo"><img src="~/images/ovafirin.jpeg" alt="ovafirin"></div>
+            <div class="logo"><img src="~/images/feslihan.jpeg" alt="feslihan"></div>
+            <div class="logo"><img src="~/images/kadesan.png" alt="kadesan"></div>
+            <div class="logo"><img src="~/images/karedeniz-kozmetik.png" alt="karadeniz-kozmetik"></div>
+            <div class="logo"><img src="~/images/cobag.png" alt="cobag"></div>
+            <div class="logo"><img src="~/images/hayvancilik.png" alt="hayvancilik"></div>
+            <div class="logo"><img src="~/images/veteriner.png" alt="veteriner"></div>
+            <div class="logo"><img src="~/images/turbo.png" alt="turbo"></div>
+            <div class="logo"><img src="~/images/sun.jpeg" alt="sun"></div>
+            <div class="logo"><img src="~/images/tek-tarim.png" alt="tek-tarim"></div>
+            <div class="logo"><img src="~/images/yagcioglu.png" alt="yagcioglu"></div>
+            <!-- Ek referans logolarını buraya ekleyebilirsiniz -->
+        </div>
+    </div>
+</div>
+
             <div class="container mt-5 hasere">
                 <div class="my-5">
                     <h1 id="baslik">BioDefence</h1>
@@ -118,8 +159,8 @@
             </div>
   <div class="row mb-3">
     <div class="col-lg-3 col-md-6 mb-4">
-      <div class="service-card">
-        <i class="fa-solid fa-mosquito service-icon"></i>
+      <div class="service-card service">
+        <i class="fa-solid fa-mosquito service-icon "></i>
         <div class="service-title">Sivrisinek İlaçlama</div>
         
       </div>
@@ -160,8 +201,7 @@
    <div class="col-lg-3 col-md-6 mb-4 mx-auto">
       <div class="service-card">
         <i class="fa-solid fa-shrimp service-icon"></i>
-        <div class="service-title">Gümüş Böceği İlaçlama</div>
-        
+        <div class="service-title">Gümüş Böceği İlaçlama</div>        
       </div>
     </div>
 
@@ -172,8 +212,24 @@
         
       </div>
     </div>
+
+    <div class="col-lg-3 col-md-6 mb-4 mx-auto">
+      <div class="service-card">
+        <i class="fa-solid fa-bug-slash service-icon"></i>
+        <div class="service-title">Tahta Kurusu İlaçlama</div>
+        
+      </div>
+    </div>
     
     <!-- Diğer hizmet kartları buraya eklenir -->
+    <div class="popup" id="popup">
+  <div class="popup-content">
+    
+    <div id="popup-text">
+      <!-- İçerik buraya eklenebilir -->
+    </div>
+  </div>
+</div>  
 
   </div>
 </div>
@@ -236,3 +292,94 @@
             
         </main>
  </div>
+
+ <!-- JavaScript ile pop-up işlevselliği eklemek için aşağıdaki kodu kullanabilirsiniz -->
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var serviceCards = document.querySelectorAll('.service-card');
+  var popup = document.getElementById('popup');
+  var popupText = document.getElementById('popup-text');
+
+   popup.style.display = 'none';
+
+  serviceCards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      var title = card.querySelector('.service-title').textContent;
+      var content;
+      if (title === "Sivrisinek İlaçlama") {
+        content = "Sivrisinekler, kan emerek insanlara hastalık bulaştırabilen böceklerdir. Sivrisineklerin üremesini engellemek için su birikintileri ve çöp konteynırları gibi üreme alanlarını temiz tutmak önemlidir. Sivrisineklerden korunmak için ise böcek spreyleri veya ekranlı pencereler kullanılabilir.";
+      } else if (title === "Karasinek İlaçlama") {
+        content = "Karasinekler, özellikle mutfak ve yiyecek depolama alanlarında bulunurlar. Gıda hijyenine ciddi tehdit oluştururlar. Karasineklerle mücadele için temizlik önlemleri alınmalı ve ilaçlama hizmetleri kullanılmalıdır.";
+      } else if (title === "Hamam Böceği İlaçlama") {
+        content = "Hamamböcekleri, hijyen sorunlarına yol açabilen ve insanlara hastalık bulaştırabilen zararlı böceklerdir. Hamamböcekleri genellikle mutfaklar, banyolar ve kanalizasyon sistemlerinde bulunurlar. Bu zararlılarla mücadele etmek için profesyonel böcek ilaçlama hizmetleri kullanılmalıdır.";
+      } else if (title === "Fare İlaçlama") {
+        content = "Fareler, gıda depolarında ve evlerde zarar verebilen ve hastalık taşıyabilen kemirgenlerdir. Farenin varlığı gıda kaynaklarını kirletebilir ve maddi zararlara neden olabilir. Farelerle mücadele için zehirli yemler, fare tuzakları veya profesyonel fare ilaçlama hizmetleri kullanılabilir. Ancak, fare kontrolü profesyonel bir yaklaşım gerektirir."
+      } else if (title === "Bit-Pire İlaçlama") {
+        content = "Bitler, insanların saç derisi veya vücudu üzerinde yaşayan parazitlerdir. Bitlerin ısırıkları kaşıntı, kızarıklık ve cilt tahrişi yapabilir. Bitlerle başa çıkmak için özel bit şampuanları veya losyonlar kullanılabilir. Ayrıca, bulaşma riskini azaltmak için kişisel hijyen önlemlerine dikkat edilmelidir.<br>Pireler, evcil hayvanlar veya insanlar tarafından taşınabilen kan emici böceklerdir. Isırıkları kaşıntı ve cilt tahrişi yapabilir. Pirelerin kontrolü için evcil hayvanların düzenli olarak kontrol edilmesi ve evin ilaçlanması önemlidir. Profesyonel bir ilaçlama hizmeti, pirelerin üremesini engellemeye yardımcı olabilir."
+      } else if (title === "Gümüş Böceği İlaçlama") {
+        content = "Gümüş böcekleri, evlerde veya diğer kapalı alanlarda bulunan küçük böceklerdir. Bu böcekler, gümüş renginde bir dış kabuğa sahip oldukları için 'gümüş böceği' olarak adlandırılırlar. Gümüş böcekleri, gıda maddelerine, kitaplara, kağıtlara ve tekstil ürünlerine zarar verebilirler."
+      } else if (title === "Kene İlaçlama") {
+        content = "Keneler, insanlar ve hayvanlar üzerinde yaşayan parazitlerdir. Bu kan emiciler, deri altına gömülerek kan emerler ve ısırma sonucunda kaşıntı, kızarıklık, şişlik ve bazen cilt tahrişi gibi rahatsızlıklara yol açabilirler. Ayrıca, keneler taşıyıcı olabilir ve Lyme hastalığı gibi enfeksiyonları yayabilirler. "
+      } else if (title === "Tahta Kurusu İlaçlama") {
+        content = "Tahtakurusu, yataklarda ve mobilyalarda bulunan kan emici bir böcektir. Isırıkları kaşıntı ve alerjik reaksiyonlara yol açabilir. Tahtakurusu kontrolü için profesyonel ilaçlama hizmetleri kullanılmalıdır."
+      } 
+         popupText.innerHTML = '<h2 style="color: white; font-size: 24px; margin-top: 10px; text-align: center;">' + title + '</h2>' + '<div style="color: white; font-size: 16px; text-align: center; padding: 10px; ">' + content + '</div>';
+      
+      // Yüzdesel boyutları ayarlayın (örneğin, ekranın yüzde 50'si)
+
+      if (window.innerWidth < 500) { // Ekran genişliği 1200 pikselden küçükse
+        sizePercentage = 1; // sizePercentage'i 0.5 olarak ayarla
+        popupText.style.marginTop = '50px'; // Büyük ekranlarda daha fazla boşluk eklemek için
+      } else {
+        sizePercentage = 0.5; // Diğer durumlarda sizePercentage'i 1 olarak bırak
+        popupText.style.marginTop = '10px'; // Daha küçük bir boşluk eklemek için
+      }
+      
+
+
+      var popupWidth = window.innerWidth * sizePercentage;
+      var popupHeight = window.innerHeight * sizePercentage;
+
+      var centerX = (window.innerWidth - popupWidth) / 2;
+      var centerY = (window.innerHeight - popupHeight) / 2;
+
+      popup.style.display = 'block';
+      popup.style.width = popupWidth + 'px';
+      popup.style.height = popupHeight + 'px';
+      popup.style.left = centerX + 'px';
+      popup.style.top = centerY + 'px';
+      popup.style.padding = '50px';
+
+      // Card'ın stil özelliklerini popup'a uygulayın
+      popup.style.backgroundColor = window.getComputedStyle(card).backgroundColor;
+      popup.style.borderRadius = window.getComputedStyle(card).borderRadius;
+      popup.style.overflow = 'hidden';
+      popup.style.textAlign = 'center';
+      popup.style.alignItems = 'center';
+
+      // Popup içeriğinin boyutlarını ve konumunu ayarlayın
+      popupText.style.maxWidth = popupWidth - 40 + 'px'; // 20 piksellik boşluk bırak
+      popupText.style.maxHeight = popupHeight - 60 + 'px'; // 30 piksellik boşluk bırak
+    
+      
+      setTimeout(function() {
+        popup.style.animation = 'popupOpen 0.5s ease-in-out';
+      }, 10);
+    });
+  });
+
+  popup.addEventListener('click', function(event) {
+    if (event.target === popup) {
+      closePopup();
+    }
+  });
+
+  function closePopup() {
+    popup.style.animation = 'popupClose 0.5s ease-in-out';
+    setTimeout(function() {
+      popup.style.display = 'none';
+      popup.style.animation = '';
+    }, 500);
+  }
+});
+</script> 

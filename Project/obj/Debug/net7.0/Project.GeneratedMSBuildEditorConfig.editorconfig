@@ -9,45 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project
 build_property.RootNamespace = Project
-build_property.ProjectDir = C:\Users\bedir\Desktop\BioDefence\Project\
+build_property.ProjectDir = C:\Users\bedir\Desktop\Projeler\BioDefence\Project\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\bedir\Desktop\BioDefence\Project
+build_property.MSBuildProjectDirectory = C:\Users\bedir\Desktop\Projeler\BioDefence\Project
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/Home/Hakkimizda.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Home/Hakkimizda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWtraW1pemRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/Home/Hizmetler.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Home/Hasereler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYXNlcmVsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Home/Hizmetler.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXptZXRsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/Home/Iletisim.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Home/Iletisim.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbGV0aXNpbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/Home/Index.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/Shared/_footer.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Shared/_footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/Shared/_navbar.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Shared/_navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9uYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/_ViewImports.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/_ViewStart.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bedir/Desktop/BioDefence/Project/Views/Shared/_Layout.cshtml]
+[C:/Users/bedir/Desktop/Projeler/BioDefence/Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9q8ibpt6yd

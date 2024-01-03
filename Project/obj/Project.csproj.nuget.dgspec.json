@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bedir\\Desktop\\BioDefence\\Project\\Project.csproj": {}
+    "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bedir\\Desktop\\BioDefence\\Project\\Project.csproj": {
+    "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bedir\\Desktop\\BioDefence\\Project\\Project.csproj",
+        "projectUniqueName": "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Users\\bedir\\Desktop\\BioDefence\\Project\\Project.csproj",
+        "projectPath": "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\Project.csproj",
         "packagesPath": "C:\\Users\\bedir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bedir\\Desktop\\BioDefence\\Project\\obj\\",
+        "outputPath": "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bedir\\AppData\\Roaming\\NuGet\\NuGet.Config",

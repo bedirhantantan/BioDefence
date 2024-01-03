@@ -4,6 +4,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Yatay scroll'u kaldırır */
 }
 
 .container {
@@ -284,6 +285,62 @@ img {
   color: #fff;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+}
+
+.popup-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 50%; /* İçeriğin maksimum genişliği */
+  position: relative;
+}
+
+.popup-card-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@keyframes popupOpen {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes popupClose {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+
 /* Stil değişiklikleri 1200 pikselin altında uygulanacak */
 @media (max-width: 1200px) {
   /* Sayfa linkleri ve adres gizlenecek */
@@ -510,6 +567,7 @@ footer {
   .responsive-map {
     height: 300px;   /* Mobilde yüksekliği 300px yap (isteğe bağlı ayarlanabilir) */
   }
+  
 }
 
 .hakkimizda-uzun img {
@@ -560,4 +618,53 @@ footer {
     font-size: 25px;
     color: #FFF;
   }
+  
 }
+
+/* Referanslarımız slider */
+
+.slider-title {
+  color:#1D5D9B;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo {
+  flex: 0 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+      width: 200px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .slider-container {
+      width: 400px;
+  }
+}
+

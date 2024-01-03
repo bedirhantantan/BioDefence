@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\bedir\\Desktop\\BioDefence\\Project\\Project.csproj",
+      "projectUniqueName": "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "c:\\Users\\bedir\\Desktop\\BioDefence\\Project\\Project.csproj",
+      "projectPath": "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\Project.csproj",
       "packagesPath": "C:\\Users\\bedir\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\bedir\\Desktop\\BioDefence\\Project\\obj\\",
+      "outputPath": "C:\\Users\\bedir\\Desktop\\Projeler\\BioDefence\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bedir\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -18,6 +18,28 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+    const sliderTrack = document.getElementById("sliderTrack");
+    let position = 0;
+    const slideWidth = 200; // Slider elemanlarının genişliği (px)
+    
+    function slideRight() {
+        position -= slideWidth;
+        updateSliderPosition();
+    }
+    
+    function updateSliderPosition() {
+        // Slider'ın sonuna gelindiğinde başa dön
+        if (position - 600<= -(sliderTrack.children.length - 1) * slideWidth) {
+            position = 0;
+        }
+        sliderTrack.style.transform = `translateX(${position}px)`;
+    }
+    
+    // Otomatik kaydırma (5 saniyede bir)
+    setInterval(slideRight, 2000);
+    
+
 });
 
 

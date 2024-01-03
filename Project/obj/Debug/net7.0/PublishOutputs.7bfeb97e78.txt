@@ -1,0 +1,8 @@
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\Project.exe
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\libman.json
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\Project.dll
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\Project.deps.json
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\Project.runtimeconfig.json
+C:\Users\bedir\Desktop\Projeler\BioDefence\Project\bin\Debug\net7.0\publish\Project.pdb
